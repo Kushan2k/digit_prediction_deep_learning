@@ -6,6 +6,10 @@ This repository contains code for training and evaluating a deep learning model 
 
 The goal of this project is to build a convolutional neural network (CNN) that can accurately classify images of handwritten digits (0-9) from the MNIST dataset. The model will be implemented using Python and TensorFlow/Keras.
 
+also created simple GUI interface using tkinter,ttkbootstrap and opencv for image handiling which lets you pic an image containing number and the model predicts the number
+
+<br>this is a simple example aim to show the realworld use case of an artificial neural network(ANN)</br>
+
 ## Dataset
 
 We are using the MNIST dataset, which is a widely used dataset for handwritten digit classification. It consists of 60,000 training images and 10,000 test images, each of size 28x28 pixels.
@@ -15,16 +19,9 @@ We are using the MNIST dataset, which is a widely used dataset for handwritten d
 The CNN architecture used for this task is as follows:
 
 - Input layer (28x28 pixels)
-- Convolutional layer with 32 filters
 - ReLU activation
-- Max pooling layer
-- Convolutional layer with 64 filters
+- Dense (fully connected) layer with 10 units
 - ReLU activation
-- Max pooling layer
-- Flatten layer
-- Dense (fully connected) layer with 128 units
-- ReLU activation
-- Dropout layer (for regularization)
 - Output layer with 10 units (corresponding to digits 0-9) and softmax activation
 
 ## Requirements
@@ -40,5 +37,5 @@ To run the code in this repository, you will need:
 You can install these dependencies using pip:
 
 ```bash
-pip install tensorflow numpy matplotlib
+pip install tensorflow numpy matplotlib opencv-python ttkbootstrap
 ```
